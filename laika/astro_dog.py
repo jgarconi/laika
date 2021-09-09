@@ -348,9 +348,6 @@ class AstroDog(object):
 
   def get_delay(self, prn, time, rcv_pos, no_dgps=False, signal='C1C', freq=None):
     sat_info = self.get_sat_info(prn, time)
-
-  def get_delay(self, prn, time, rcv_pos, no_dgps=False, signal='C1C', freq=None):
-    sat_info = self.get_sat_info(prn, time)
     if sat_info is None:
       return None
     sat_pos = sat_info[0]
